@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <section className="mx-auto max-w-3xl px-4 py-20 text-center">
@@ -5,12 +7,12 @@ export default function NotFound() {
       <p className="text-[#6B7280] mb-8">
         Siden kan være flyttet eller slettet.
       </p>
-      <a
+      <Link
         href="/"
         className="inline-flex rounded-xl px-5 py-3 bg-[#374151] text-white hover:opacity-90"
       >
         Til forsiden
-      </a>
+      </Link>
     </section>
   );
 }
